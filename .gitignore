@@ -44,3 +44,6 @@ coverage/
 .coverage
 *.lcov
 
+# Local vendored clones / scratch
+third_party/
+
