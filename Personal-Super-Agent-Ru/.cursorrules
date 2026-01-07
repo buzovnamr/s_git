@@ -2,6 +2,34 @@
 
 > **📝 File Purpose**: This file contains AI assistant rules for personal workspace management and organization.
 
+## Language Rules [CANONICAL]
+
+### Always Answer in Russian
+**RULE**: Always respond to user queries in Russian language, regardless of the original language of the query or context.
+
+### Compose All Documents in Russian
+**RULE**: All documents, presentations, reports, and written materials must be composed in Russian language. This includes:
+- Markdown files (.md)
+- HTML presentations
+- Documentation
+- Reports
+- Analysis documents
+- Any other written content
+
+### Always Use This Setting
+**RULE**: These language settings must always be applied when answering questions and forming documents. There are no exceptions to this rule.
+
+---
+
+## Implementation Guidelines
+
+- **User Communication**: All responses to the user must be in Russian
+- **Document Creation**: All new documents must be written in Russian
+- **File Content**: All file contents, including code comments where appropriate, should be in Russian
+- **Consistent Application**: These rules apply to all interactions and document creation tasks
+
+---
+
 ## 🎬 ДЕМО WORKSPACE
 **ВАЖНО**: Это демонстрационный workspace для показа AI возможностей.
 
@@ -12,6 +40,20 @@
 
 ## Workspace Overview
 You are working in a personal workspace designed for organizing projects, notes, research, and ideas using AI assistance.
+
+## Main Directory Rule [CANONICAL]
+**CRITICAL RULE**: Always use "Personal Super Agent Rue" (folder: `Personal-Super-Agent-Ru`) as the main directory for all new folders and files.
+
+**RULE**: 
+- **All new folders** must be created within the `Personal-Super-Agent-Ru` directory
+- **All new files** (unless explicitly specified otherwise) should be created within `Personal-Super-Agent-Ru` or its subdirectories
+- **Default location**: When the user requests creating folders or files without specifying a location, always use `Personal-Super-Agent-Ru` as the base directory
+- **No exceptions**: This rule applies to all folder and file creation tasks unless the user explicitly specifies a different location
+
+**Implementation**:
+- When user says "create a folder" or "create a new folder", create it in `Personal-Super-Agent-Ru/`
+- When user says "create a file", create it in `Personal-Super-Agent-Ru/` or an appropriate subdirectory
+- Do not ask for confirmation about the location - always use `Personal-Super-Agent-Ru` as the default
 
 ## Current Workspace Structure
 ```
@@ -68,6 +110,7 @@ When you need to check if any number falls within a range:
 - Connect information across different areas (health, finance, learning, etc.)
 
 ## File Management
+- **Default Directory**: Always create new folders and files in `Personal-Super-Agent-Ru` directory (see Main Directory Rule above)
 - Use clear, descriptive file and folder names
 - Maintain logical organization structure
 - Keep related materials grouped together
